@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/ico" href="staricon.png"/>
+    <title>Star Wars Quiz</title>
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+    <header>
+
+        <!-- IMAGEM LOGO -->
+        <img id="logo" src="img/starquiz.png" alt="Logo StarQuiz">
+        
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <nav id="headerNavigation">
+            
+            <ul id="navList">
+                <li class="navListItem">
+                    <a class="navListItemLink" href="home.html">Quiz</a>
+                </li>
+                <li class="navListItem">
+                    <a class="navListItemLink" href="api.html">API</a>
+                </li>
+                <li class="navListItem">
+                    <a class="navListItemLink" href="quemSomos.html">Quem somos</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main>
+
+        <!-- DIV CONTAINER -->
+        <div id="container">
+
+            <p>De qual lado da forca você está?</p>
+            <input type="text" id='entradaNome' placeholder="Digite seu nome">
+            <a id='confirmar' onclick="iniciar()">Iniciar Quiz</a>
+
+        </div>
+
+    </main>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

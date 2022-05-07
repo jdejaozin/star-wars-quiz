@@ -2,6 +2,7 @@
 main{
     background-image: url("../img/unknown.png");
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
 }
 #container{
@@ -11,7 +12,7 @@ main{
     align-items: center;
     padding-top: 150px;
 }
-#container p{
+#introTitle{
     font-size: 40px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #f2cd37;

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/api.css">
+    <link rel="stylesheet" href="css/quiz.css">
     <link rel="icon" type="image/ico" href="img/staricon.png"/>
-    <title>API | Star Wars Quiz</title>
+    <title>Quiz | Star Wars Quiz</title>
 </head>
 <body>
+
     <!-- CABEÇALHO -->
     <header>
 
@@ -24,7 +25,7 @@
                     <a class="navListItemLink" href="home.html">Quiz</a>
                 </li>
                 <li class="navListItem">
-                    <a class="navListItemLink" href="api.html">API</a>
+                    <a class="navListItemLink" href="API.html">API</a>
                 </li>
                 <li class="navListItem">
                     <a class="navListItemLink" href="quemSomos.html">Quem somos</a>
@@ -35,29 +36,24 @@
 
     </header>
 
-    <main>
+    <main id="principal">
 
-        <div id="container">
-            <p>API Utilizada</p>
-            <a href="https://swapi.dev/" target="_blank">The Star Wars API</a>
-            <p>Criadores:</p>
-            <ul>
-                <li>
-                    <a href="https://github.com/juriy" target="_blank">Juriy Bura</a>
-                </li>
-                <li>
-                    <a href="https://github.com/Videocard" target="_blank">Owen Hallett</a>
-                </li>
-                <li>
-                    <a href="https://github.com/carvilsi" target="_blank">Carvilsi</a>
-                </li>
-                <li>
-                    <a href="https://github.com/astagi" target="_blank">Andrea Stagi</a>
-                </li>
-            </ul>
+        <div id="quizDiv">
+
+            <p id="pergunta"></p>
+
+            <div class="containerPergunta">
+                <input class="quizbtn" id="op1B" type="button" value="">
+                <input class="quizbtn" id="op2B" type="button" value="">
+                <input class="quizbtn" id="op3B" type="button" value="">
+                <input class="quizbtn" id="op4B" type="button" value="">
+            </div>
+
         </div>
 
     </main>
-    
+
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

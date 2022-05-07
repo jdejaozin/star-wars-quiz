@@ -1,0 +1,58 @@
+main{
+    background-image: url("../img/unknown.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+/* PERGUNTAS */
+#pergunta{
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #f2cd37;
+}
+
+#quizDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+#pergunta{
+    padding-bottom: 50px;
+}
+
+
+
+.quizbtn{
+    font-size: 1.2em;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f2cd37;
+    transition: 0.6s;
+    
+}
+.quizbtn:hover{
+    
+    color: #f2cd37;
+    background-color: black;
+}
+
+#final{
+    font-size: 40px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #f2cd37;
+}
+#mensagem{
+    padding-top: 40px;
+    font-size: 30px;
+    color: #f2cd37;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+.yodinha{
+    max-width: 20%;
+    margin-bottom: -92vh;
+}

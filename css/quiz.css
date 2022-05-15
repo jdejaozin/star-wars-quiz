@@ -28,6 +28,7 @@ main{
 .quizbtn{
     font-size: 1.2em;
     border-radius: 20px;
+    border: solid;
     padding: 20px;
     cursor: pointer;
     background-color: #f2cd37;
@@ -54,5 +55,5 @@ main{
 }
 .yodinha{
     max-width: 20%;
-    margin-bottom: -92vh;
+    padding-bottom: -100vh;
 }

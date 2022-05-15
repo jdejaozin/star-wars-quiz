@@ -24,7 +24,7 @@ function randomQuestao(){
     Math.floor para arredondar o número
     Linha de retorno para chamar a função em outra
     */
-    let questao = Math.floor(Math.random() * 3);
+    let questao = Math.floor(Math.random() * 30);
     return questao;
 
 }
@@ -50,7 +50,7 @@ function starQuiz(){
     }
 
     /* se a parada continuar igual a 0 então não existe nenhum valor repetido */
-    if(parada === 0){
+    if(parada === 0 && vetorQuestao.length < 10){
         /* numero sorteado inserido no vetor de questões */
         vetorQuestao.push(questao);
         /* viariável pergunta recebendo a pergunta do quiz */
@@ -66,11 +66,11 @@ function starQuiz(){
     /* Se o ponto de parada for 1 e o vetor de questões do mesmo tamanho que o quiz signfica
     que acabou, para o caso de escrevermos mais perguntas podemos fazer o ponto  de parada com
     vetorQuesao.length === numeroDeQuestoesQueQuizermos */
-    }else if(parada === 1 && vetorQuestao.length === quiz.length){
+    }else if(vetorQuestao.length === 10){
         /* Chamada da função de fim */
         fim();
     /* se a parada for 1 então o número sorteado é repetido */
-    }else if(parada === 1){
+    }else if(parada === 1 && vetorQuestao.length < 10){
         /* recursividade da função para continuar executando até sortear um número ainda não sorteado */
         starQuiz();
     }
@@ -93,14 +93,14 @@ function fim(){
     /* botão de reiniciar */
     tela.innerHTML = `<a href="home.html"><input class="quizbtn" type="button" value="Reiniciar Quiz"></input></a>`
     /* mensagem com os pontos */
-    tela.innerHTML += `<p id="final"> Você acertou ${pontos} de ${quiz.length}</p>`
+    tela.innerHTML += `<p id="final"> Você acertou ${pontos} de 10</p>`
 
     /* Condicional para condicionar a frase do Yoda */
     if(pontos <= 5){
         /* mensagem */
         tela.innerHTML += "<p id='mensagem'>Você deve desaprender o que aprendeu</p>"
         /* imagem */
-        tela.innerHTML +=`<img class="yodinha" src="../img/yoda1.png">`
+        tela.innerHTML +=`<img class="yodinha" src="img/yoda1.png">`
         /* redefinição do fundo para ficar cinza */
         main.style.backgroundImage = "none";
         main.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
@@ -108,7 +108,7 @@ function fim(){
         /* mensagem */
         tela.innerHTML += "<p id='mensagem'>Um Jedi usa a forca para conhecimento e defesa, nunca para ataque</p>"
         /* imagem */
-        tela.innerHTML +=`<img class="yodinha" src="../img/yoda2.png">`
+        tela.innerHTML +=`<img class="yodinha" src="img/yoda2.png">`
         /* redefinição do fundo para ficar cinza */
         main.style.backgroundImage = "none";
         main.style.backgroundColor = "rgba(0, 0, 0, 0.8)";

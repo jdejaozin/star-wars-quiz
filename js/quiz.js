@@ -50,8 +50,8 @@ const quiz = [
     choices: [
       `Sua mão esquerda`,
       `Sua mão direita`,
-      `Seu braço direito`,
-      `Seu braço esquerdo`,
+      `Seu braco direito`,
+      `Seu braco esquerdo`,
     ],
   },
   {
@@ -143,11 +143,11 @@ const quiz = [
   {
     question: `Como Obi-Wan Kenobi se sentia sobre voar?`,
     answer: `Odiava`,
-    choices: [`Amava`, `Indiferente`, `Odiava`, `Dependia da situação`],
+    choices: [`Amava`, `Indiferente`, `Odiava`, `Dependia da situacão`],
   },
   {
     question: `O que o Yoda fala pro Obi-Wan depois que ele diz 
-                que "aquele garoto é nossa última esperança" (Anakin)?`,
+                que "aquele garoto é nossa última esperanca" (Anakin)?`,
     answer: `Não, há outro`,
     choices: [
       `Não, há outro`,
@@ -162,7 +162,7 @@ const quiz = [
     choices: [`Yoda`, `Qui-Gon Jinn`, `Mace Windu`, `Obi Wan Kenobi`],
   },
   {
-    question: `Qual robô abaixo é responsável pela manutencão e navegação de astronaves?`,
+    question: `Qual robô abaixo é responsável pela manutencão e navegacão de astronaves?`,
     answer: `R2-D2`,
     choices: [`BB-8`, `R2-D2`, `C-3PO`, `D-0`],
   },
